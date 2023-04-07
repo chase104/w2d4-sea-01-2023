@@ -1,0 +1,39 @@
+* {
+    box-sizing: border-box;
+}
+
+body{
+    display: grid;
+    grid-template-columns: 2fr 3fr 2fr;
+    grid-template-rows: 50px 30px 1fr 1fr 1fr;
+    min-height: 100vh;
+    max-width: 100vw;
+    background-color: beige;
+    gap:12px
+}
+
+#site-title{
+    grid-column: span 3;
+}
+#page-image{
+    grid-column: span 2;
+    grid-row: span 2;
+}
+nav{
+    grid-column: span 3;
+}
+
+img{
+    max-height: 200px;
+}
+
+
+div img {
+    width: 100%;
+    min-height: 100%
+}
+
+
+#banner {
+    grid-column: span 2;
+}

@@ -31,4 +31,9 @@ nav{
 
 nav + img {
     grid-column: span 3;
-}
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    background-color: beige;
+  }
+  
