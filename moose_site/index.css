@@ -1,0 +1,34 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    max-height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    /* fractional units */
+    grid-template-rows: 50px 30px 1fr 1fr 1fr;
+    gap: 12px
+}
+
+img {
+    max-height: 100px;
+}
+#site-title{
+    grid-column: span 3;
+}
+p {
+    grid-column: span 2;
+}
+nav{
+    grid-column: span 3;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: aquamarine;
+
+}
+
+nav + img {
+    grid-column: span 3;
+}
