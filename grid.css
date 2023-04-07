@@ -1,0 +1,41 @@
+*{
+    /* include padding and border as the width and height */
+    box-sizing: border-box; 
+}
+body{
+    min-height: 100vh;
+    background-color: aliceblue;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 50px 1fr 30px;
+    grid-gap: 5px
+}
+aside {
+    background-color: #a2b4da;
+  }
+  
+  main {
+    background-color: #f3dba8;
+  }
+  nav {
+    grid-column: span 2;
+    background-color: aquamarine;
+    justify-content: flex-start !important;
+    padding: 12px;
+    gap: 5px;
+  }
+
+  nav div:last-child {
+    margin-left: auto;
+  }
+  
+  footer {
+    background-color: #a2cbb6;
+    grid-column: span 2;
+  }
+
+  .flex-ctr {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
